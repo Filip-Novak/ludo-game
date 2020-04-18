@@ -1,0 +1,364 @@
+html{
+    margin:0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid black;
+    background-color: #34801e;
+    background: linear-gradient(to bottom right, red, transparent 50%, yellow),
+                linear-gradient(to top right, #23b8ff, transparent 50%, green) #888;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        width: auto;
+        height: auto;
+    }
+}
+
+.container {
+    margin:0;
+    font-size: 40px;
+}
+
+h1{
+    margin:0;
+    text-align: center;
+    font-size:140px;
+    font-family: 'porkysregular';
+    color: #481590;
+    text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;
+    padding-top: 20px;
+    padding-bottom: 85px; /*93,8*/
+}
+
+@font-face {
+    font-family: 'porkysregular';
+    src: url('fonts/porkys_-webfont.woff2') format('woff2'),
+    url('fonts/porkys_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: inline-block;
+}
+
+.figures-image {
+    height: 300px;
+    width: 300px;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.col-log {
+    padding-right: 130px;
+}
+
+.col-img {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.col-reg {
+    padding-left: 130px;
+}
+
+@media screen and (max-width: 1200px) {
+    .col-log {
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    .col-reg {
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+}
+
+.row-play {
+    padding-top: 60px;
+}
+.row-stat {
+    padding-top: 60px;
+}
+.row-pswrd {
+    padding-top: 60px;
+}
+.row-logout {
+    padding-top: 100px;
+}
+
+.row-NewPswrd {
+    padding-top: 30px;
+}
+
+.row-ConfPswrd {
+    padding-top: 30px;
+}
+
+.row-ChangeBtn {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.row-twoPG {
+    display: flex;
+    justify-content: center;
+}
+
+.row-threePG {
+    padding-top: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.row-fourPG {
+    padding-top: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.row-matchesH {
+    padding-top: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginForm {
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.registerForm {
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.inputField {
+    padding-top: 13px;
+}
+
+.statistics {
+    padding-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-height: 600px) {
+    .statistics {
+        flex-direction: row;
+    }
+}
+
+.statsForm {
+    font-family: Arial;
+    font-size: 21px;
+}
+
+caption {
+    margin:0;
+    font-family: 'porkysregular';
+    font-size: 26px;
+    color: #9910ff;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#th1 {
+    color: gold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#th2 {
+    color: mediumturquoise;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#th3 {
+    color: #CD7F32;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#th4 {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.changePswrd {
+    padding-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-height: 600px) {
+    .changePswrd {
+        flex-direction: row;
+    }
+}
+
+.changeForm {
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    font-family: Arial;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.changeForm .inputField {
+   padding:0;
+}
+
+.statistics .backBtn {
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.changePswrd .backBtn {
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 13px ;
+    font-size: 15px;
+    color: #292929;
+}
+
+.submitButton {
+    padding-top: 13px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.sBtn {
+    width: 100%;
+    color: #565656;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    border: solid 1px black;
+    border-radius: 60px;
+    cursor: pointer;
+    outline: none;
+}
+
+.sBtn:hover, sBtn:active{
+    border-color: #0d7320;
+    color: #0d7320;
+
+    -webkit-box-shadow: inset 0 0 10px #0d7320;
+    -moz-box-shadow: inset 0 0 10px #0d7320;
+    box-shadow: inset 0 0 10px #0d7320;
+}
+
+.mBtn {
+    font-family: Arial;
+    width: 100%;
+    color: rgba(159, 43, 0, 0.98);
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: orange;
+    border: solid 3px rgba(159, 43, 0, 0.98);
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.mBtn:hover, mBtn:active{
+    -webkit-box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+    -moz-box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+    box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+}
+
+.cont-loading {
+    padding-top: 250px;
+}
+
+.loading {
+    width: max-content;
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
