@@ -4,12 +4,14 @@ import UserStore from "./stores/UserStore";
 import MenuButton from "./MenuButton";
 import ChangePswrd from "./ChangePswrd";
 import Statistics from "./Statistics"
+import SubmitButton from "./SubmitButton";
+import Game from './Game/Game';/**/
 
 class Menu extends React.Component{
    constructor(props) {
         super(props);
         this.state={
-            buttonDisabled: false
+            buttonDisabled: false,
         }
    }
 
@@ -76,7 +78,7 @@ class Menu extends React.Component{
                                     </Link>
                                 </div>
                                 <div className="row-logout">
-                                    <MenuButton
+                                    <SubmitButton
                                         text = {'Log out'}
                                         disabled={this.state.buttonDisabled}
                                         onClick={ () => this.doLogout() }
@@ -87,9 +89,8 @@ class Menu extends React.Component{
                     }}/>
 
                     <Switch>
-                        <Route exact path="/play" >
-                        </Route>
-                        <Route exact path="/statistics"  component={Statistics} />
+                        <Route exact path="/play" component={Game}/>
+                        <Route exact path="/statistics" component={Statistics} />
                         <Route exact path="/changePassword" component={ChangePswrd} />
                     </Switch>
                 </Router>

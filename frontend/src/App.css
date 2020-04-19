@@ -20,6 +20,16 @@ html{
     font-size: 40px;
 }
 
+.container #player {
+    font-size: 30px;
+    position:absolute;
+    top: 5px;
+    left: 10px;
+}
+.span-name {
+    font-family: "Comic Sans MS";
+}
+
 h1{
     margin:0;
     text-align: center;
@@ -341,6 +351,28 @@ td {
     box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
 }
 
+.row-logout .submitButton {
+    padding: 0;
+}
+.row-logout .sBtn {
+    font-family: Arial;
+    width: 100%;
+    color: rgba(159, 43, 0, 0.98);
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: orange;
+    border: solid 3px rgba(159, 43, 0, 0.98);
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.row-logout .sBtn:hover, sBtn:active {
+    -webkit-box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+    -moz-box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+    box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+}
+
 .cont-loading {
     padding-top: 250px;
 }
@@ -355,7 +387,23 @@ td {
     background-color: white;
 }
 
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#boardCanvas {
+    margin: 0;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#diceCanvas {
+    padding-top: 13px;
+}
 
 
 

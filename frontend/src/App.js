@@ -5,8 +5,7 @@ import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
 import Menu from './Menu';
 import figures from './images/figures.png';
-/*import './App.css';*/
-import Game from './Game/Game';/**/
+import './App.css';
 
 class App extends React.Component{
 
@@ -38,7 +37,7 @@ class App extends React.Component{
   }
 
   render() {
-    /*if(UserStore.loading){
+    if(UserStore.loading){
       return (
           <div className="app">
             <div className='container'>
@@ -55,7 +54,8 @@ class App extends React.Component{
         return (
             <div className="app">
               <div className='container'>
-                  <Menu />
+                <label id='player'>Player: <span className='span-name'>{UserStore.username}</span></label>
+                <Menu />
               </div>
             </div>
         );
@@ -80,12 +80,7 @@ class App extends React.Component{
             </div>
           </div>
       );
-    }*/
-    return (
-        <div className="app">
-           <Game />
-        </div>
-    );
+    }
   }
 }
 
