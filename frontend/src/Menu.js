@@ -5,7 +5,7 @@ import MenuButton from "./MenuButton";
 import ChangePswrd from "./ChangePswrd";
 import Statistics from "./Statistics"
 import SubmitButton from "./SubmitButton";
-import Game from './Game/Game';/**/
+import Game from './Game';
 
 class Menu extends React.Component{
    constructor(props) {
@@ -48,41 +48,42 @@ class Menu extends React.Component{
 
     render() {
         return (
-            <div className="menu">
                 <Router>
                     <Route path="/" exact render={() => {
                         return (
-                            <div className="column">
-                                <div className="row-play">
-                                    <Link to='/play'>
-                                        <MenuButton
-                                            text={'Play'}
+                            <div className="menu">
+                                <div className="column">
+                                    <div className="row-play">
+                                        <Link to='/play'>
+                                            <MenuButton
+                                                text={'Play'}
+                                                disabled={this.state.buttonDisabled}
+                                            />
+                                        </Link>
+                                    </div>
+                                    <div className="row-stat">
+                                        <Link to='/statistics'>
+                                            <MenuButton
+                                                text = {'Statistics'}
+                                                disabled={this.state.buttonDisabled}
+                                            />
+                                        </Link>
+                                    </div>
+                                    <div className="row-pswrd">
+                                        <Link to='/changePassword'>
+                                            <MenuButton
+                                                text = {'Change password'}
+                                                disabled={this.state.buttonDisabled}
+                                            />
+                                        </Link>
+                                    </div>
+                                    <div className="row-logout">
+                                        <SubmitButton
+                                            text = {'Log out'}
                                             disabled={this.state.buttonDisabled}
+                                            onClick={ () => this.doLogout() }
                                         />
-                                    </Link>
-                                </div>
-                                <div className="row-stat">
-                                    <Link to='/statistics'>
-                                        <MenuButton
-                                            text = {'Statistics'}
-                                            disabled={this.state.buttonDisabled}
-                                        />
-                                    </Link>
-                                </div>
-                                <div className="row-pswrd">
-                                    <Link to='/changePassword'>
-                                        <MenuButton
-                                            text = {'Change password'}
-                                            disabled={this.state.buttonDisabled}
-                                        />
-                                    </Link>
-                                </div>
-                                <div className="row-logout">
-                                    <SubmitButton
-                                        text = {'Log out'}
-                                        disabled={this.state.buttonDisabled}
-                                        onClick={ () => this.doLogout() }
-                                    />
+                                    </div>
                                 </div>
                             </div>
                         );
@@ -94,7 +95,6 @@ class Menu extends React.Component{
                         <Route exact path="/changePassword" component={ChangePswrd} />
                     </Switch>
                 </Router>
-            </div>
         );
    }
 }

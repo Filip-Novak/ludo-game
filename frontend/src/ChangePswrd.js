@@ -106,7 +106,7 @@ class ChangePswrd extends React.Component{
                             <div className="changePswrd">
                                 <div className="changeForm">
                                     <div className="row-Pswrd">
-                                        <label>Password</label>
+                                        <label title="Password">Password</label>
                                         <InputField
                                             type='password'
                                             placeholder='Password'
@@ -115,7 +115,7 @@ class ChangePswrd extends React.Component{
                                         />
                                     </div>
                                     <div className="row-NewPswrd">
-                                        <label>New password</label>
+                                        <label title="New password">New password</label>
                                          <InputField
                                              type='password'
                                              placeholder='New password'
@@ -124,7 +124,7 @@ class ChangePswrd extends React.Component{
                                          />
                                     </div>
                                     <div className="row-ConfPswrd">
-                                         <label>Confirm new password</label>
+                                         <label title="Confirm new password">Confirm new password</label>
                                          <InputField
                                              type='password'
                                              placeholder='Confirm password'
