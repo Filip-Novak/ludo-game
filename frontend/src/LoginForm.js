@@ -48,7 +48,7 @@ class LoginForm extends React.Component{
 
         this.setState({
             buttonDisabled: true
-        })
+        });
 
         try {
             let res = await fetch('/login', {

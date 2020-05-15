@@ -11,7 +11,7 @@ class Statistics extends React.Component{
             username: UserStore.username,
             stats1: [],
             stats2: []
-        }
+        };
         this.getStats();
     }
 
@@ -65,7 +65,7 @@ class Statistics extends React.Component{
             }
             return table;
         } else {
-            return <tr><td colspan="5">You didn't play any matches</td></tr>
+            return <tr><td colSpan="5">You didn't play any matches</td></tr>
         }
     }
 

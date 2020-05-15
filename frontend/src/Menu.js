@@ -5,7 +5,7 @@ import MenuButton from "./MenuButton";
 import ChangePswrd from "./ChangePswrd";
 import Statistics from "./Statistics"
 import SubmitButton from "./SubmitButton";
-import Game from './Game';
+import Lobby from './Lobby';
 
 class Menu extends React.Component{
    constructor(props) {
@@ -19,7 +19,7 @@ class Menu extends React.Component{
 
         this.setState({
             buttonDisabled: true
-        })
+        });
 
         try {
             let res = await fetch('/logout', {
@@ -54,7 +54,7 @@ class Menu extends React.Component{
                             <div className="menu">
                                 <div className="column">
                                     <div className="row-play">
-                                        <Link to='/play'>
+                                        <Link to='/lobby'>
                                             <MenuButton
                                                 text={'Play'}
                                                 disabled={this.state.buttonDisabled}
@@ -90,7 +90,7 @@ class Menu extends React.Component{
                     }}/>
 
                     <Switch>
-                        <Route exact path="/play" component={Game}/>
+                        <Route exact path="/lobby" component={Lobby}/>
                         <Route exact path="/statistics" component={Statistics} />
                         <Route exact path="/changePassword" component={ChangePswrd} />
                     </Switch>

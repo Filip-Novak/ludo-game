@@ -416,6 +416,7 @@ td {
     padding-left: 6px;
     border-radius: 15px;
     border: 2px solid black;
+    visibility: hidden;
 }
 
 .left-bluePlayer{
@@ -430,6 +431,7 @@ td {
     padding-left: 6px;
     border-radius: 15px;
     border: 2px solid black;
+    visibility: hidden;
 }
 
 .turn-Information{
@@ -455,6 +457,7 @@ td {
 
 #board {
     margin: 0;
+    border-top: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
@@ -490,6 +493,7 @@ text{
     padding-left: 6px;
     border-radius: 15px;
     border: 2px solid black;
+    visibility: hidden;
 }
 
 .right-yellowPlayer{
@@ -504,6 +508,7 @@ text{
     padding-left: 6px;
     border-radius: 15px;
     border: 2px solid black;
+    visibility: hidden;
 }
 
 .modal {
@@ -543,7 +548,200 @@ text{
     cursor: pointer;
 }
 
+.lobby{
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+}
 
+.row-lobby{
+    padding-top: 110px;
+    padding-right: 200px;
+}
+
+.row-waitWithLabel{
+    border: 2px solid black;
+    background-color: gainsboro;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.waitingLobby{
+    border: 2px solid black;
+    overflow:auto;
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 270px;
+    height: 390px;
+}
+
+.waitingLobby p{
+    margin:0;
+    padding-top: 11px;
+}
+
+.row-button-room {
+    padding-top: 160px;
+}
+
+.row-room1WithLabel{
+    border: 2px solid black;
+    background-color: gainsboro;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.room1{
+    border: 2px solid black;
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 266px;
+    height: 180px;
+}
+
+.room1 p{
+    margin:0;
+    padding-top: 11px;
+}
+
+.room-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.room-buttons div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.RUbtn {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: #6498ff;
+    border: solid 2px black;
+    width: 266px;
+}
+
+.leaveBtn{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ff8886;
+    border: solid 2px black;
+    width: 133px;
+}
+
+.joinBtn{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: #67ff7c;
+    border: solid 2px black;
+    width: 133px;
+}
+
+.row-button-room .backBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 130px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.row-button-room .sBtn{
+    font-family: Arial;
+    color: rgba(159, 43, 0, 0.98);
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: orange;
+    border: solid 3px rgba(159, 43, 0, 0.98);
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.row-button-room .sBtn:hover, .sBtn:active {
+    -webkit-box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+    -moz-box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+    box-shadow: inset 0 0 10px rgba(159, 43, 0, 0.98);
+}
+
+.row-rooms{
+    padding-top: 50px;
+    padding-left: 150px;
+}
+
+.row-room2WithLabel{
+    border: 2px solid black;
+    background-color: gainsboro;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.room2{
+    border: 2px solid black;
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 266px;;
+    height: 180px;
+}
+
+.room2 p{
+    margin:0;
+    padding-top: 11px;
+}
+
+.row-room3Layout{
+    padding-top: 60px;
+}
+
+.row-room3WithLabel{
+    border: 2px solid black;
+    background-color: gainsboro;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.room3{
+    border: 2px solid black;
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 266px;
+    height: 180px;
+}
+
+.room3 p{
+    margin:0;
+    padding-top: 11px;
+}
+
+p img{
+    padding-right: 5px;
+    padding-top: 6px;
+    float: right;
+}
 
 
 
