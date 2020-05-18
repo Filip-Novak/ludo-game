@@ -672,7 +672,7 @@ class Game extends React.Component {
                                         <polygon points="0,280 40,300 0,320" fill="red" />
 
                                         <rect x="40px" y="40px" width="160px" height="160px" fill="white" />
-                                        <polyline points="0 240, 240 240, 240 0" stroke="black" strokeWidth="1px" fill="none" strokeLinejoin="miter" />
+                                        <polyline points="0 240, 240 240, 240 0" stroke="black" stroke-width="1px" fill="none" stroke-linejoin="miter" />
 
 
                                         <rect x="360px" y="0px" width="240px" height="240px" fill="green" />
@@ -682,7 +682,7 @@ class Game extends React.Component {
                                         <polygon points="280,0 300,40 320,0" fill="green" />
 
                                         <rect x="400px" y="40px" width="160px" height="160px" fill="white" />
-                                        <polyline points="360 0, 360 240, 600 240" stroke="black" strokeWidth="1px" fill="none" strokeLinejoin="miter" />
+                                        <polyline points="360 0, 360 240, 600 240" stroke="black" stroke-width="1px" fill="none" stroke-linejoin="miter" />
 
 
                                         <rect x="0px" y="360px" width="240px" height="240px" fill="#1989ff" />
@@ -692,7 +692,7 @@ class Game extends React.Component {
                                         <polygon points="280,600 300,560 320,600" fill="#1989ff" />
 
                                         <rect x="40px" y="400px" width="160px" height="160px" fill="white" />
-                                        <polyline points="0 360, 240 360, 240 600" stroke="black" strokeWidth="1px" fill="none" strokeLinejoin="miter" />
+                                        <polyline points="0 360, 240 360, 240 600" stroke="black" stroke-width="1px" fill="none" stroke-linejoin="miter" />
 
 
                                         <rect x="360px" y="360px" width="240px" height="240px" fill="yellow" />
@@ -702,75 +702,75 @@ class Game extends React.Component {
                                         <polygon points="600,320 560,300 600,280" fill="yellow" />
 
                                         <rect x="400px" y="400px" width="160px" height="160px" fill="white" />
-                                        <polyline points="360 600, 360 360, 600 360" stroke="black" strokeWidth="1px" fill="none" strokeLinejoin="miter" />
+                                        <polyline points="360 600, 360 360, 600 360" stroke="black" stroke-width="1px" fill="none" stroke-linejoin="miter" />
 
 
-                                        <rect x="240px" y="240px" width="120px" height="120px" fill="none" strokeWidth="1px" stroke="black" />
-                                        <line x1="240px" y1="240px" x2="360px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="360px" y1="240px" x2="240px" y2="360px" stroke="black" strokeWidth="1px" />
+                                        <rect x="240px" y="240px" width="120px" height="120px" fill="none" stroke-width="1px" stroke="black" />
+                                        <line x1="240px" y1="240px" x2="360px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="360px" y1="240px" x2="240px" y2="360px" stroke="black" stroke-width="1px" />
 
 
-                                        <line x1="0px" y1="280px" x2="240px" y2="280px" stroke="black" strokeWidth="1px" />
-                                        <line x1="0px" y1="320px" x2="240px" y2="320px" stroke="black" strokeWidth="1px" />
+                                        <line x1="0px" y1="280px" x2="240px" y2="280px" stroke="black" stroke-width="1px" />
+                                        <line x1="0px" y1="320px" x2="240px" y2="320px" stroke="black" stroke-width="1px" />
 
-                                        <line x1="40px" y1="240px" x2="40px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="80px" y1="240px" x2="80px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="120px" y1="240px" x2="120px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="160px" y1="240px" x2="160px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="200px" y1="240px" x2="200px" y2="360px" stroke="black" strokeWidth="1px" />
-
-
-                                        <line x1="280px" y1="0px" x2="280px" y2="240px" stroke="black" strokeWidth="1px" />
-                                        <line x1="320px" y1="0px" x2="320px" y2="240px" stroke="black" strokeWidth="1px" />
-
-                                        <line x1="240px" y1="40px" x2="360px" y2="40px" stroke="black" strokeWidth="1px" />
-                                        <line x1="240px" y1="80px" x2="360px" y2="80px" stroke="black" strokeWidth="1px" />
-                                        <line x1="240px" y1="120px" x2="360px" y2="120px" stroke="black" strokeWidth="1px" />
-                                        <line x1="240px" y1="160px" x2="360px" y2="160px" stroke="black" strokeWidth="1px" />
-                                        <line x1="240px" y1="200px" x2="360px" y2="200px" stroke="black" strokeWidth="1px" />
+                                        <line x1="40px" y1="240px" x2="40px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="80px" y1="240px" x2="80px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="120px" y1="240px" x2="120px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="160px" y1="240px" x2="160px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="200px" y1="240px" x2="200px" y2="360px" stroke="black" stroke-width="1px" />
 
 
-                                        <line x1="360px" y1="280px" x2="600px" y2="280px" stroke="black" strokeWidth="1px" />
-                                        <line x1="360px" y1="320px" x2="600px" y2="320px" stroke="black" strokeWidth="1px" />
+                                        <line x1="280px" y1="0px" x2="280px" y2="240px" stroke="black" stroke-width="1px" />
+                                        <line x1="320px" y1="0px" x2="320px" y2="240px" stroke="black" stroke-width="1px" />
 
-                                        <line x1="560px" y1="240px" x2="560px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="520px" y1="240px" x2="520px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="480px" y1="240px" x2="480px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="440px" y1="240px" x2="440px" y2="360px" stroke="black" strokeWidth="1px" />
-                                        <line x1="400px" y1="240px" x2="400px" y2="360px" stroke="black" strokeWidth="1px" />
-
-
-                                        <line x1="280px" y1="360px" x2="280px" y2="600px" stroke="black" strokeWidth="1px" />
-                                        <line x1="320px" y1="360px" x2="320px" y2="600px" stroke="black" strokeWidth="1px" />
-
-                                        <line x1="240px" y1="560px" x2="360px" y2="560px" stroke="black" strokeWidth="1px" />
-                                        <line x1="240px" y1="520px" x2="360px" y2="520px" stroke="black" strokeWidth="1px" />
-                                        <line x1="240px" y1="480px" x2="360px" y2="480px" stroke="black" strokeWidth="1px" />
-                                        <line x1="240px" y1="440px" x2="360px" y2="440px" stroke="black" strokeWidth="1px" />
-                                        <line x1="240px" y1="400px" x2="360px" y2="400px" stroke="black" strokeWidth="1px" />
-
-                                        <polyline points="0 0, 0 600, 600 600, 600 0" stroke="black" strokeWidth="1px" fill="none" strokeLinejoin="miter" />
+                                        <line x1="240px" y1="40px" x2="360px" y2="40px" stroke="black" stroke-width="1px" />
+                                        <line x1="240px" y1="80px" x2="360px" y2="80px" stroke="black" stroke-width="1px" />
+                                        <line x1="240px" y1="120px" x2="360px" y2="120px" stroke="black" stroke-width="1px" />
+                                        <line x1="240px" y1="160px" x2="360px" y2="160px" stroke="black" stroke-width="1px" />
+                                        <line x1="240px" y1="200px" x2="360px" y2="200px" stroke="black" stroke-width="1px" />
 
 
-                                        <circle id="redPawn1" onClick={() => this.movement('red',1)} cx="80px" cy="80px" r="20px" strokeWidth="1px" stroke="black" fill="red" visibility="visible" />
-                                        <circle id="redPawn2" onClick={() => this.movement('red',2)} cx="80px" cy="160px" r="20px" strokeWidth="1px" stroke="black" fill="red" visibility="visible" />
-                                        <circle id="redPawn3" onClick={() => this.movement('red',3)} cx="160px" cy="80px" r="20px" strokeWidth="1px" stroke="black" fill="red" visibility="visible" />
-                                        <circle id="redPawn4" onClick={() => this.movement('red',4)} cx="160px" cy="160px" r="20px" strokeWidth="1px" stroke="black" fill="red" visibility="visible" />
+                                        <line x1="360px" y1="280px" x2="600px" y2="280px" stroke="black" stroke-width="1px" />
+                                        <line x1="360px" y1="320px" x2="600px" y2="320px" stroke="black" stroke-width="1px" />
 
-                                        <circle id="greenPawn1" onClick={() => this.movement('green',1)} cx="440px" cy="80px" r="20px" strokeWidth="1px" stroke="black" fill="green" visibility="visible" />
-                                        <circle id="greenPawn2" onClick={() => this.movement('green',2)} cx="440px" cy="160px" r="20px" strokeWidth="1px" stroke="black" fill="green" visibility="visible" />
-                                        <circle id="greenPawn3" onClick={() => this.movement('green',3)} cx="520px" cy="80px" r="20px" strokeWidth="1px" stroke="black" fill="green" visibility="visible" />
-                                        <circle id="greenPawn4" onClick={() => this.movement('green',4)} cx="520px" cy="160px" r="20px" strokeWidth="1px" stroke="black" fill="green" visibility="visible" />
+                                        <line x1="560px" y1="240px" x2="560px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="520px" y1="240px" x2="520px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="480px" y1="240px" x2="480px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="440px" y1="240px" x2="440px" y2="360px" stroke="black" stroke-width="1px" />
+                                        <line x1="400px" y1="240px" x2="400px" y2="360px" stroke="black" stroke-width="1px" />
 
-                                        <circle id="bluePawn1" onClick={() => this.movement('blue',1)} cx="80px" cy="440px" r="20px" strokeWidth="1px" stroke="black" fill="#1989ff" visibility="visible" />
-                                        <circle id="bluePawn2" onClick={() => this.movement('blue',2)} cx="80px" cy="520px" r="20px" strokeWidth="1px" stroke="black" fill="#1989ff" visibility="visible" />
-                                        <circle id="bluePawn3" onClick={() => this.movement('blue',3)} cx="160px" cy="440px" r="20px" strokeWidth="1px" stroke="black" fill="#1989ff" visibility="visible" />
-                                        <circle id="bluePawn4" onClick={() => this.movement('blue',4)} cx="160px" cy="520px" r="20px" strokeWidth="1px" stroke="black" fill="#1989ff" visibility="visible" />
 
-                                        <circle id="yellowPawn1" onClick={() => this.movement('yellow',1)} cx="440px" cy="440px" r="20px" strokeWidth="1px" stroke="black" fill="yellow" visibility="visible" />
-                                        <circle id="yellowPawn2" onClick={() => this.movement('yellow',2)} cx="440px" cy="520px" r="20px" strokeWidth="1px" stroke="black" fill="yellow" visibility="visible" />
-                                        <circle id="yellowPawn3" onClick={() => this.movement('yellow',3)} cx="520px" cy="440px" r="20px" strokeWidth="1px" stroke="black" fill="yellow" visibility="visible" />
-                                        <circle id="yellowPawn4" onClick={() => this.movement('yellow',4)} cx="520px" cy="520px" r="20px" strokeWidth="1px" stroke="black" fill="yellow" visibility="visible" />
+                                        <line x1="280px" y1="360px" x2="280px" y2="600px" stroke="black" stroke-width="1px" />
+                                        <line x1="320px" y1="360px" x2="320px" y2="600px" stroke="black" stroke-width="1px" />
+
+                                        <line x1="240px" y1="560px" x2="360px" y2="560px" stroke="black" stroke-width="1px" />
+                                        <line x1="240px" y1="520px" x2="360px" y2="520px" stroke="black" stroke-width="1px" />
+                                        <line x1="240px" y1="480px" x2="360px" y2="480px" stroke="black" stroke-width="1px" />
+                                        <line x1="240px" y1="440px" x2="360px" y2="440px" stroke="black" stroke-width="1px" />
+                                        <line x1="240px" y1="400px" x2="360px" y2="400px" stroke="black" stroke-width="1px" />
+
+                                        <polyline points="0 0, 0 600, 600 600, 600 0" stroke="black" stroke-width="1px" fill="none" stroke-linejoin="miter" />
+
+
+                                        <circle id="redPawn1" onClick={() => this.movement('red',1)} cx="80px" cy="80px" r="20px" stroke-width="1px" stroke="black" fill="red" visibility="visible" />
+                                        <circle id="redPawn2" onClick={() => this.movement('red',2)} cx="80px" cy="160px" r="20px" stroke-width="1px" stroke="black" fill="red" visibility="visible" />
+                                        <circle id="redPawn3" onClick={() => this.movement('red',3)} cx="160px" cy="80px" r="20px" stroke-width="1px" stroke="black" fill="red" visibility="visible" />
+                                        <circle id="redPawn4" onClick={() => this.movement('red',4)} cx="160px" cy="160px" r="20px" stroke-width="1px" stroke="black" fill="red" visibility="visible" />
+
+                                        <circle id="greenPawn1" onClick={() => this.movement('green',1)} cx="440px" cy="80px" r="20px" stroke-width="1px" stroke="black" fill="green" visibility="visible" />
+                                        <circle id="greenPawn2" onClick={() => this.movement('green',2)} cx="440px" cy="160px" r="20px" stroke-width="1px" stroke="black" fill="green" visibility="visible" />
+                                        <circle id="greenPawn3" onClick={() => this.movement('green',3)} cx="520px" cy="80px" r="20px" stroke-width="1px" stroke="black" fill="green" visibility="visible" />
+                                        <circle id="greenPawn4" onClick={() => this.movement('green',4)} cx="520px" cy="160px" r="20px" stroke-width="1px" stroke="black" fill="green" visibility="visible" />
+
+                                        <circle id="bluePawn1" onClick={() => this.movement('blue',1)} cx="80px" cy="440px" r="20px" stroke-width="1px" stroke="black" fill="#1989ff" visibility="visible" />
+                                        <circle id="bluePawn2" onClick={() => this.movement('blue',2)} cx="80px" cy="520px" r="20px" stroke-width="1px" stroke="black" fill="#1989ff" visibility="visible" />
+                                        <circle id="bluePawn3" onClick={() => this.movement('blue',3)} cx="160px" cy="440px" r="20px" stroke-width="1px" stroke="black" fill="#1989ff" visibility="visible" />
+                                        <circle id="bluePawn4" onClick={() => this.movement('blue',4)} cx="160px" cy="520px" r="20px" stroke-width="1px" stroke="black" fill="#1989ff" visibility="visible" />
+
+                                        <circle id="yellowPawn1" onClick={() => this.movement('yellow',1)} cx="440px" cy="440px" r="20px" stroke-width="1px" stroke="black" fill="yellow" visibility="visible" />
+                                        <circle id="yellowPawn2" onClick={() => this.movement('yellow',2)} cx="440px" cy="520px" r="20px" stroke-width="1px" stroke="black" fill="yellow" visibility="visible" />
+                                        <circle id="yellowPawn3" onClick={() => this.movement('yellow',3)} cx="520px" cy="440px" r="20px" stroke-width="1px" stroke="black" fill="yellow" visibility="visible" />
+                                        <circle id="yellowPawn4" onClick={() => this.movement('yellow',4)} cx="520px" cy="520px" r="20px" stroke-width="1px" stroke="black" fill="yellow" visibility="visible" />
 
 
                                         <text id="redCounter" x="250px" y="313px" visibility="hidden">0</text>

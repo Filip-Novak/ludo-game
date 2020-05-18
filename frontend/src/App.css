@@ -3,7 +3,6 @@ html{
     width: calc(100% - 4px);
     height: calc(100% - 4px);
     border: 2px solid black;
-    background-color: #34801e;
     background: linear-gradient(to bottom right, red, transparent 50%, yellow),
                 linear-gradient(to top right, #23b8ff, transparent 50%, green) #888;
 }
@@ -39,7 +38,7 @@ h1{
     color: #481590;
     text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;
     padding-top: 20px;
-    padding-bottom: 85px; /*93,8*/
+    padding-bottom: 85px;
 }
 
 @font-face {
@@ -55,12 +54,6 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-@media screen and (max-width: 1200px) {
-    .row {
-        flex-direction: column;
-    }
 }
 
 .menu{
@@ -81,6 +74,16 @@ h1{
     min-width: 100px;
 }
 
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size:80px;
+    }
+    .figures-image {
+        height: 200px;
+        width: 200px;
+    }
+}
+
 .col-log {
     padding-right: 130px;
 }
@@ -95,6 +98,9 @@ h1{
 }
 
 @media screen and (max-width: 1200px) {
+    .row {
+        flex-direction: column;
+    }
     .col-log {
         padding-right: 65px;
         padding-left: 65px;
@@ -221,17 +227,24 @@ table, th, td {
 th {
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
 }
 
 td {
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
     text-align: center;
     background-color: whitesmoke;
+}
+
+@media screen and (max-width: 450px) {
+    th, td {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 #th1 {
@@ -532,6 +545,7 @@ text{
     width: 50%;
     text-align: center;
 }
+
 #inf{
     font-size: 25px;
 }
@@ -743,5 +757,24 @@ p img{
     float: right;
 }
 
-
-
+@media screen and (max-width: 1150px) {
+    .lobby {
+        flex-direction: column;
+    }
+    .row-lobby{
+        padding-top: 50px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    .row-button-room {
+        padding-top: 30px;
+    }
+    .row-button-room .backBtn{
+        padding-top: 20px;
+    }
+    .row-rooms{
+        padding-top: 30px;
+        padding-right: 75px;
+        padding-left: 75px;
+    }
+}
