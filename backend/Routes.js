@@ -201,73 +201,6 @@ class Routes {
 		});	
 	}
 	
-	stats(app, db){
-		app.post('/statistics', (req, res) => {
-			
-			let username = req.body.username;
-			
-			if (username.length > 15) {
-				res.json({
-					success: false,
-					msg: 'An error occurred, please try again'
-				})
-				return;
-			}
-			
-			let att = [username];
-			db.query('SELECT statistiky.* FROM pouzivatelia, statistiky WHERE BINARY pouzivatelia.meno = ? AND pouzivatelia.id_pouzivatela = statistiky.id_hraca LIMIT 1', 
-						att, (err, data, fields) => {
-				
-				if (err) {
-					res.json({
-						success: false,
-						msg: 'An error occurred, please try again'
-					})
-					return;
-				}
-				
-				if(data && data.length === 1) {
-					
-					if (data[0].pocet_hier > 0) {
-						
-						let att2 = [data[0].id_hraca];
-						db.query('SELECT * FROM inf_o_hrach WHERE id_hraca = ? ORDER BY cislo_hry DESC', att2, (err, data2, fields) => {
-						
-							if (err) {
-								res.json({
-									success: false,
-									msg: 'An error occurred, please try again'
-								})
-								return;
-							}	
-						
-							res.json({
-								success: true,
-								onlyOne: false,
-								stats1: data[0],
-								stats2: data2
-							})
-							return;							
-						});					
-					} else {
-						res.json({
-							success: true,
-							onlyOne: true,
-							stats1: data[0]							
-						})
-						return;
-					}			
-				} else {
-					res.json({
-						success: false,
-						msg: 'User statistics not found, please try again'
-					})
-					return;
-				}	
-			});
-		});	
-	}
-	
 	logout(app, db) {
 		app.post('/logout', (req, res) => {
 			
@@ -310,6 +243,93 @@ class Routes {
 			} else {
 				res.json({
 					success: false
+				})
+				return false;
+			}
+		});	
+	}
+	
+	stats(app, db){
+		app.post('/statistics', (req, res) => {
+			if (req.session.userID) {
+				
+				let att = [req.session.userID];
+				db.query('SELECT * FROM pouzivatelia WHERE id_pouzivatela = ? LIMIT 1', att, (err, data, fields) => {
+					
+					if (data && data.length === 1) {
+						let username = data[0].meno;
+						
+						if (username.length > 15) {
+							res.json({
+								success: false,
+								msg: 'An error occurred, please try again'
+							})
+							return;
+						}
+						
+						let att2 = [username];
+						db.query('SELECT statistiky.* FROM pouzivatelia, statistiky WHERE BINARY pouzivatelia.meno = ? AND pouzivatelia.id_pouzivatela = statistiky.id_hraca LIMIT 1', 
+							att2, (err, data2, fields) => {
+										
+							if (err) {
+								res.json({
+									success: false,
+									msg: 'An error occurred, please try again'
+								})
+								return;
+							}
+
+							if(data2 && data2.length === 1) {
+					
+								if (data2[0].pocet_hier > 0) {
+									
+									let att3 = [data2[0].id_hraca];
+									db.query('SELECT * FROM inf_o_hrach WHERE id_hraca = ? ORDER BY cislo_hry DESC', att3, (err, data3, fields) => {
+									
+										if (err) {
+											res.json({
+												success: false,
+												msg: 'An error occurred, please try again'
+											})
+											return;
+										}	
+									
+										res.json({
+											success: true,
+											onlyOne: false,
+											stats1: data2[0],
+											stats2: data3
+										})
+										return;							
+									});					
+								} else {
+									res.json({
+										success: true,
+										onlyOne: true,
+										stats1: data2[0]							
+									})
+									return;
+								}			
+							} else {
+								res.json({
+									success: false,
+									msg: 'User statistics not found, please try again'
+								})
+								return;
+							}			
+						});
+					} else {
+						res.json({
+							success: false,
+							msg: 'User not find, please try again'
+						})
+						return false;
+					}
+				});
+			} else {
+				res.json({
+					success: false,
+					msg: 'An error occurred with User'
 				})
 				return false;
 			}
